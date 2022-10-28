@@ -20,7 +20,7 @@ describe("POST /crawler", () => {
     await request(app)
       .post("/login")
       .send({
-        email: "justin424w@gmail.com",
+        email: "alexjoe134367@gmail.com",
         password: "qwerqwer",
       })
       .then(async (res) => {

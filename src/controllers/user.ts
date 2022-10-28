@@ -50,7 +50,7 @@ export const postLogin = async (
   passport.authenticate(
     "local",
     (err: Error, user: UserDocument, info: IVerifyOptions) => {
-      console.log(`Justin: err: ${err}, user: ${user}, info: ${info}`);
+      console.log(`Alex: err: ${err}, user: ${user}, info: ${info}`);
       if (err) {
         return next(err);
       }
@@ -129,7 +129,7 @@ export const postSignup = async (
 
   if (!errors.isEmpty()) {
     req.flash("errors", errors.array());
-    console.log("Justin Error: ", errors);
+    console.log("Alex Error: ", errors);
     return res.redirect("/signup");
   }
 

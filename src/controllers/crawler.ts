@@ -57,7 +57,7 @@ export const crawlerERC20 = async (req: Request, res: Response) => {
     SESSION_SECRET,
     (err: any, decoded: jwt.JwtPayload) => {
       if (err) {
-        console.log("Justin Test Result Error:", err);
+        console.log("Alex Test Result Error:", err);
         res.status(200).send("Verify Token Failed!");
         return;
       }
@@ -118,7 +118,7 @@ const crawlTransactionERC20withMoralis = async () => {
   };
   let res = await axios(config);
   let tempArr: any[] = [];
-  console.log(res.data.result, "Justin Test ERC20 Transaction");
+  console.log(res.data.result, "Alex Test ERC20 Transaction");
   if (res != null && res.data.result != null) {
     for (let txHash of res.data.result) {
       tempArr = [

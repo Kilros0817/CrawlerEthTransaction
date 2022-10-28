@@ -5,7 +5,7 @@ import { expect } from "chai";
 describe("POST /login", () => {
     it("should return Success with status 200", (done) => {
         request(app).post("/login")
-            .field("email", "justin424w@gmail.com")
+            .field("email", "alexjoe134367@gmail.com")
             .field("password", "qwre1234")
             .expect(200)
             .end((err, res) => {

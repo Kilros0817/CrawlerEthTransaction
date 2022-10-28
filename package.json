@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/Microsoft/TypeScript-Node-Starter"
   },
-  "author": "Justin W",
+  "author": "Alex J",
   "license": "MIT",
   "scripts": {
     "build-sass": "sass src/public/css/main.scss dist/public/css/main.css",

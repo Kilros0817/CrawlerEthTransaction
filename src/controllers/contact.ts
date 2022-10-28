@@ -37,7 +37,7 @@ export const postContact = async (req: Request, res: Response) => {
     }
 
     const mailOptions = {
-        to: "justin424w@gmail.com",
+        to: "alexjoe134367@gmail.com",
         from: `${req.body.name} <${req.body.email}>`,
         subject: "Contact Form",
         text: req.body.message
